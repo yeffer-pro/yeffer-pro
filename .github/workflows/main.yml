@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <litle>calculadora de inventarios</litle>    
+    ><link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container" >
+        <h1>calculadora de inventarios</h1>  
+        <form id="invenaryForm" >
+            <label for="product">nombre del producto:</label>
+            <input type="text" id="product" name="product" required>
+
+            <label for="initialQuantity">cantidad inicial:</label>
+            <input type="number" id="initialQuantity" name="initialQuantity" required>
+
+            <label for="sales">ventas:</label>
+            <input type="number" id="sales" name="sales" required>
+
+            <label for="purchases">compras:</label>
+            <input type="number" id="purchases" name="purchases" required>
+
+            <button type="button" onclick="calculateInvenary()">calculadora inventario final</button>
+        </form>
+
+        <div class="result" id="result">
+        </div>
+    </div>
+    <script src="js/script.js"></script> 
+</body>
+</html>           
